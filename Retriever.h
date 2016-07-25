@@ -6,3 +6,4 @@
 #include <dirent.h>
 #include <unistd.h>
 #define BUFFER_SIZE 256
+#define VERSION "0.1.0"
