@@ -2,7 +2,7 @@
 A very simple C program I made for myself to help with fs operations. It searches for a filename in a directory specified and copies it to the current directory, keeping the same name.
 
 #Usage
-  retrieve <-v | (<DirectoryToSearch> <FileName> [-c | -m])>
+  retrieve <-v | ( DirectoryToSearch FileName [-c | -m])>
   
   -c = copy the file, leaving the original in place
   
