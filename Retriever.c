@@ -44,12 +44,16 @@ int main(int argc, char *argv[]){
             //printf ("%s\n", FromDirectoryEntry->d_name);
         }
         closedir (FromDirectory);
-        } else {
+        }
+        else{
             fprintf(stderr,"Error opening the directory. Maybe sudo ?");
             return EXIT_FAILURE;
         }
         free(FromDirectoryPath);
-    }else{
+    } else if(argc == 2 && strcmp(argv[1],"-v")==0){
+            printf("Version number %s",VERSION);
+        }
+    else{
         printf("Usage : retrieve <From_Directory> <File_Name> [-c -m]");
     }
     return EXIT_SUCCESS;
